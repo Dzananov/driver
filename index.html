@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Harry Potter quiz</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#gameArea">GameArea</a>
+                </li>
+                <li>
+                    <a href="#Rules">Rule</a>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <h1 class="heading">Vozacka Dozvola</h1>
+    </header>
+    <!--Hero Image as background-->
+    <section>
+        <div id="hero"> <!---Here will the gamearea start containing questions, answer optiopns, both startgame button, nextbutton and restartbutton, also the scvorevborad at the end-->
+            <div class="game-area" id="gameArea">
+                <div id="resultSection" class="hide">
+                    <button type="button" id="reset" class="btn btn-warning">Igraj opet</button>
+                    <div class="score-area">
+                        <p class="scores">Correct Answers <span id="score">0</span></p>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" id="start" class="hide btn btn-warning">Kreni Igru</button>
+                </div>
+            <div class="control-area">
+                <div id="question-area" class= "hide">
+                    <p>Pitanje</p>
+                    <span id="question">Pritisni start</span>
+                    <br>
+                    <p> Answer Options:</p>
+                    <div>
+                        <button type="button" id="answer1" class="btn btn-warning">Odgovor 1</button>
+                        <button type="button" id="answer2" class="btn btn-warning">Odgovor 2</button>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="button" id="next" class="btn btn-warning hide">Nastavi</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!--Game rules are at the bottom of the page-->
+        <h1 id="Rules">Game Rules</h1>
+        <p>
+            <ul class="game-area">
+                <li>10 questions</li>
+                <li>You have to answer the current question to go on to next</li>
+                <li>You have to answer all questions to be able to se your score</li>
+                <li>Score will only show how many questions you have answerd correct</li>
+            </ul>
+        </p>
+    </section>
+    <footer>
+        <!--Footer. The "find us on" codes with links to facebook, instagram and twitter is from the loverunning project-->
+                <span>Find us on:</span>
+        
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Find us on Facebook (link opens in a new tab)">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Find us on Instagram (link opens in a new tab)">Instagram</a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener" aria-label="Find us on Twitter (link opens in a new tab)">Twitter</a>
+        
+                <p>Copyright © HP Quizgames 2022</p>
+            </footer>
+   
+<script src="assets/js/script.js"></script>
+</body>
+</html>
